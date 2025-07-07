@@ -12,9 +12,9 @@ import math
 
 def kalkulator_volume_tabung_streamlit():
     """
-    Kalkulator volume tabung dengan metode pendekatan discovery learning menggunakan Streamlit.
+    Kalkulator volume tabung menggunakan Streamlit.
     """
-    st.title("Kalkulator Volume Tabung (Discovery Learning)")
+    st.title("Kalkulator Volume Tabung")
     st.write("---")
 
     st.write("Hai! Mari kita hitung volume tabung bersama-sama.")
@@ -26,12 +26,12 @@ def kalkulator_volume_tabung_streamlit():
     st.subheader("Langkah 1: Memahami Luas Alas")
     st.write("Nah, mari kita pikirkan tentang alasnya.")
     st.write("Alas tabung berbentuk lingkaran. Bagaimana kita menghitung **luas sebuah lingkaran**?")
-    st.write("Ingat rumus luas lingkaran? Itu melibatkan 'pi' (sekitar 3.14) dan jari-jari.")
+    st.write("Ingat rumus luas lingkaran? Itu melibatkan 'pi' (sekitar 22/7) dan jari-jari.")
     st.markdown("Luas Lingkaran = $\\pi \\times \\text{jari-jari} \\times \\text{jari-jari}$")
     st.markdown("Atau, Luas Lingkaran = $\\pi r^2$")
 
     st.write("---")
-    st.subheader("Langkah 2: Masukkan Nilai Tabung")
+    st.subheader("Langkah 2: Masukkan Jari-Jari Dan Tinggi Tabung")
 
     # Input Jari-jari
     jari_jari = st.number_input("Masukkan panjang **jari-jari** alas tabung (misal: cm)", min_value=0.0, value=1.0, step=0.1, format="%.2f")
@@ -74,6 +74,3 @@ def kalkulator_volume_tabung_streamlit():
 
 if __name__ == "__main__":
     kalkulator_volume_tabung_streamlit()
-
-"""Alamat saya didesa tegal suruh dan saya berangkat kuliah menggunakan motor"""
-
